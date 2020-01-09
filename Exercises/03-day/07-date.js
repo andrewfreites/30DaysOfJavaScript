@@ -1,8 +1,17 @@
-//## 7. Exercises: Date time Object
+//7 Date time Object
 
 console.log(`1. What is the year today?`)
+const now = new Date()
+console.log(now.getFullYear())
 console.log(`2. What is the month today as a number?`)
+console.log((now.getMonth())+1)
 console.log(`3. What is the date today?`)
+const year = now.getFullYear()
+const month = now.getMonth() + 1
+const date = now.getDate()
+const hours = now.getHours()
+const minutes = now.getMinutes()
+console.log(`${date}/${month}/${year} ${hours}:${minutes}`)
 console.log(`4. What is the day today as a number?`)
 console.log(`5. What is the hours now?`)
 console.log(`6. What is the minutes now?`)

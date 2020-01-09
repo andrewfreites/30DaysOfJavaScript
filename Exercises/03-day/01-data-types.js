@@ -1,0 +1,15 @@
+//1. Exercises: Data types Part
+console.log('1. Exercises: Data types Part')
+console.log('Declare firstName, lastName, country, city, age, isMarried, year variable and assign value to it')
+let firstName='Andres', lastName='Freites', country='Venezuela', city='San Felix', age=30, isMarried=false, year=2020;
+console.log(`let firstName='Andres', lastName='Freites', country='Venezuela', city='San Felix', age=30, isMarried=false, year=2020;`)
+console.log(`The JavaScript typeof operator uses to check different data types. Check the data type of each variables from question number 1.`)
+console.log('firstName:\t',typeof(firstName))
+console.log('lastName:\t',typeof(lastName))
+console.log('country:\t',typeof(country))
+console.log('city:\t\t',typeof(city))
+console.log('age:\t\t',typeof(age))
+console.log(`Check if type of '10' is equal to 10`)
+console.log(typeof('10')==typeof(10))
+console.log(`Check if parseInt('9.8') is equal to 10`)
+console.log((parseInt('9.8'))==10)
