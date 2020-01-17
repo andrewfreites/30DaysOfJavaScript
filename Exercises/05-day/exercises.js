@@ -1,4 +1,4 @@
-// Day 05 Arrays
+// 💻 Exercises:Day 5
 //01
 console.log(`1. Declare an _empty_ array;`)
 const empty=Array();
@@ -89,10 +89,13 @@ itCompanies.splice(itCompanies.length/2,(itCompanies.length/2)+1)
 console.log(`22. Remove the last IT company from the array`)
 itCompanies.pop()
 //23
-console.log(`Remove all IT companies`)
-1. 
-1. Create a separate countries.js file and store the countries array in to this file, create a separate file web_techs.js ans store the webTechs array in to this file. Access both file in main.js file
-1. First remove all the functions and change the string to array and count the number of words in the array
+console.log(`23.Remove all IT companies`)
+itCompanies.splice()
+//24
+console.log(`24. Create a separate countries.js file and store the countries array in to this file,\n
+create a separate file web_techs.js ans store the webTechs array in to this file. Access both file in main.js file`)
+// import './countries' I don't know how to do it without modules
+/*1. First remove all the functions and change the string to array and count the number of words in the array
 
     ```js
     let text =
@@ -146,4 +149,4 @@ console.log(`Remove all IT companies`)
 1.Slice the first ten countries from the [countries array](https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js)
 1. Find the middle country(ies) in the [countries array](https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js)
 1. Find the middle country(ies) in the [countries array](https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js)
-1. Divide the countries array into two equal arrays if it is even.  If countries array is not even , one more country for the first half.
+1. Divide the countries array into two equal arrays if it is even.  If countries array is not even , one more country for the first half.*/

@@ -1,4 +1,4 @@
-// 💻 Exercise  : Conditionals
+// 💻 Exercise Day 4: Conditionals
 //01
 console.log(`Get user input using prompt(“Enter your age:”). If user is 18 or older ,\n
 give feedback:You are old enough to drive but if not 18 give feedback to wait for the years he supposed to wait for.`)
