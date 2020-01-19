@@ -15,17 +15,17 @@ do{
 console.log(idRand.join(''));
 //02
 console.log(`2. Write a script which generates a random hexadecimal number.`)
-let i=0;
-let id= Array()
-let idRand= ['#']
+let j=0;
+let hexa= Array()
+let hexaRand= ['#']
 do{
-    id.push(((Math.floor(Math.random()*122+48))))
-    if((id[i]>=48 && id[i]<=57)||(id[i]>=65 && id[i]<=71)){
-    idRand.push(String.fromCharCode(id[i]))
+    hexa.push(((Math.floor(Math.random()*122+48))))
+    if((hexa[j]>=48 && hexa[j]<=57)||(hexa[j]>=65 && hexa[j]<=71)){
+    hexaRand.push(String.fromCharCode(hexa[j]))
     }
-    i++
-} while (idRand.length<=6)
-console.log(idRand.join(''));
+    j++
+} while (hexaRand.length<=6)
+console.log(hexaRand.join(''));
 //03
 console.log(`3. Write a script which generates a random rgb color number.`)
 let rgb= Array()
@@ -84,9 +84,7 @@ let triple= Array()
 for (i=0;i<newCount.length;i++){
     triple[i]=[countries[i],sliced[i],largo[i]]
 }
-for (i=0;i<triple.length;i++){
-    console.log(triple)
-}
+console.log(triple)
 //07
 console.log(`7. In above countries array, check if there is a country or countries containing the word 'land'.\n
 If there are countries containing 'land', print it as array. If there is no country containing the word 'land',\n
@@ -96,30 +94,65 @@ print 'All these are countries without land'.`)
     ```
 */
 lands= Array()
-for (i=0;i<triple.length;i++){
-    if(triple.includes('land')){
-        lands[i]=triple[0]
+nonLand= Array()
+for (i=0;i<countries.length;i++){
+    if(countries[i].includes('land')){
+        lands.push(countries[i])
+    }else{
+        nonLand.push(countries[i])
     }
 }
-1. In above countries array, check if there is  a country or countries end with a substring 'ia'. If there are countries end with, print it as array. If there is no country containing the word 'ai', print 'These are countries ends without ia'.
-
+console.log(`These are with 'land':\n ${lands.join(', ')}`)
+console.log(`All these are countries without 'land':\n ${nonLand.join(', ')}`)
+//08
+console.log(`8. In above countries array, check if there is  a country or countries end with a substring 'ia'.\n
+If there are countries end with 'ia', print it as array. If there is no country containing the word 'ia',\n
+print 'These are countries ends without ia'.`)
+/*
     ```sh
     ['Albania', 'Bolivia','Ethiopia']
     ```
-
-1. Using the above countries array, find the country containing the biggest number of characters.
-
+    */
+let arrayIa= Array()
+let nonIa= Array()
+for (i=0;i<countries.length;i++){
+    let largo=countries[i].length
+    if (countries[i].slice(largo-2,largo)=='ia'){
+        arrayIa.push(countries[i])
+    } else{
+        nonIa.push(countries[i])
+    }
+}
+console.log(`Countries with 'ia':\n ${arrayIa.join(', ')}`)
+console.log(`These are countries ends without 'ia':\n ${nonIa.join(', ')}`)
+//09
+console.log(`09. Using the above countries array, find the country containing the biggest number of characters.`)
+/*
       ```sh
       Ethiopia
       ```
-
-1. Using the above countries array, find the country containing only 5 characters.
-
+*/
+let bigger= Array()
+for (i=0;i<countries.length;i++){
+    bigger.push(countries[i].length)
+}
+let big=Math.max.apply(null,bigger)
+let BigWord=countries[bigger.indexOf(big)]
+console.log(`Longest word is ${BigWord}`)
+//10
+console.log(`10. Using the above countries array, find the country containing only 5 characters.`)
+/*
     ```sh
     ['Japan', 'Kenya']
     ```
-
-1. Find the longest word in the webTechs array
+*/
+for (i=0;i<countries.length;i++){
+    if(countries[i].length==5){
+        short=countries[i]
+    }
+    }
+console.log(short)
+/* 1. Find the longest word in the webTechs array
 1. Use the webTechs are to create the following array of arrays:
 
     ```sh
@@ -147,3 +180,4 @@ for (i=0;i<triple.length;i++){
       EXPRESS
       MONGODB
     ```
+    */
